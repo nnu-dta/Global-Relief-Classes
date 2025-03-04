@@ -1,0 +1,5 @@
+numpy>=1.19.0
+matplotlib>=3.3.0
+rasterio>=1.2.0
+geopandas>=0.9.0
+whitebox>=2.0.0

@@ -24,6 +24,20 @@ A code repo for producing Global Basic Landform Units using GIS software and scr
 ### Post-processing
 - Eliminating incorrect hills
 - Eliminating fragmented blocks
+## How to use
+### Requirements
+- numpy>=1.19.0
+- matplotlib>=3.3.0
+- rasterio>=1.2.0
+- geopandas>=0.9.0
+- whitebox>=2.0.
+### Installation
+```bash
+pip install -r requirements.txt
+```
+### Usage
+- Run the code for the data preprocessing
+- Run the code for the dividing plains and mountains in L1
 ## Data description
 We utilized several Digital Elevation Models (DEMs) and innovative approaches to classify landforms into three levels on the Earth's surface, producing a dataset with a 30-meter resolution. The meanings and colormap for the three levels of landforms are provided in Table 1.
 
