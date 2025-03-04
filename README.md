@@ -20,6 +20,7 @@ A code repo for producing Global Basic Landform Units using GIS software and scr
 - Calculating surface uplift index (SUI)
 - Determining SUI thresholds
 ### Type refinement for L3
+- Reclassifying the landform types by elevation
 ### Post-processing
 - Eliminating incorrect hills
 - Eliminating fragmented blocks
@@ -42,5 +43,15 @@ Yang, X., Li, S., Ma, J., Chen, Y., Zhou, X., Li, F., Xiong, L., Zhou, C., Tang,
 MIT
 ## Contributor
 Yang, Xin; Li, Sijin; Ma, Junfei; Chen, Yang; Zhou, Xingyu; Zhou, Chenghu; Meadows, Micheal; Li, Fayuan; Xiong, Liyang; Tang, Guoan
+## TODO list
+- [ ] Add the code for the data preprocessing
+  - [x] Add the code for the reprojecting
+  - [ ] Reproject the DEMs to (EPSG:9820)
+  - [ ] Add the code for the mosaicing
+  - [ ] Add the code for the extracting DEMs in the land areas
+- [x] Add the code for the dividing plains and mountains in L1
+- [ ] Add the code for the classifying the landform types in L2
+- [ ] Add the code for the type refinement
+- [ ] Add the code for the post-processing
 ## Contact
 [Chen, Yang (陈阳)](https://cubicsyang.github.io/), School of Geography, Nanjing Normal Univeristy
