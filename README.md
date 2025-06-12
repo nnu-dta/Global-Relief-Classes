@@ -1,4 +1,4 @@
-# GBLU-code
+# Global Relief Classes
 A code repo for producing Global Relief Classes using GIS libraries and scripts.
 ## Processing workflow
 ### Data preprocessing
