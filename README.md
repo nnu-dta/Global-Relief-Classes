@@ -5,7 +5,7 @@ A code repo for producing Global Relief Classes using GIS libraries and scripts.
 -  Extracting DEMs in the land areas
 -  Reprojection
 -  Mosaicing DEMs
-### Dividing plains and mountains (L1)
+### Dividing flat and rugged terrain (L1)
 - Calculating slope maps
 - Determining slope thresholds
 - Extracting flat areas
@@ -68,12 +68,13 @@ Yang, Xin; Li, Sijin; Ma, Junfei; Chen, Yang; Zhou, Xingyu; Zhou, Chenghu; Meado
   - [ ] Reproject the DEMs to (EPSG:9820)
   - [ ] Add the code for the mosaicing
   - [ ] Add the code for the extracting DEMs in the land areas
-- [x] Add the code for the dividing plains and mountains in L1
+- [x] Add the code for the dividing flat and rugged terrain in L1
 - [ ] Add the code for the classifying the landform types in L2
 - [ ] Add the code for the type refinement
 - [ ] Add the code for the post-processing
 ## Contact
 [Chen, Yang (陈阳)](https://cubicsyang.github.io/), School of Geography, Nanjing Normal Univeristy
 ## Acknowledgements
-Thanks for the WhiteboxTools developers for their great work on the WhiteboxTools library, which is used in this project. Thanks for the Nanjing Normal University and Deep-time Digital Earth (DDE) International Big Science Program for providing the data and support for this project.
+Thanks for the WhiteboxTools developers for their great work on the WhiteboxTools library, which is used in this project.
+Thanks for the Nanjing Normal University and Deep-time Digital Earth (DDE) International Big Science Program for providing the data and support for this project.
 
