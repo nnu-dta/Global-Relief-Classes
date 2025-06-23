@@ -1,5 +1,14 @@
 # Global Relief Classes
+[![GitHub](https://img.shields.io/github/license/nnu-dta/global-relief-classes)](https://github.com/nnu-dta/global-relief-classes/blob/main/LICENSE)
+[![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.15641257.svg)](https://doi.org/10.5281/zenodo.15641257)
+[![Publication](https://img.shields.io/badge/paper-accepted-blue)](https://doi.org/10.5194/essd-2024-401)
+[![GitHub Repo stars](https://img.shields.io/github/stars/nnu-dta/global-relief-classes?style=social)](https://github.com/nnu-dta/global-relief-classes/stargazers)
+
 A code repo for producing Global Relief Classes using GIS libraries and scripts.
+
+## Overview
+This repository contains the code for producing Global Relief Classes, which classifies terrain relief on the Earth's surface into two levels with 1 arc-second resolution. The classification is based on the differences in slope characteristics and is divided into flat terrain and rugged terrain at Level 1 (L1). At Level 2 (L2), flat terrain is further divided into low-altitude, middle-altitude, high-altitude, and very high-altitude flat terrain, while rugged terrain is subdivided into low-relief, gentle-relief, moderate-relief, high-relief, and very high-relief rugged terrain.
+[![Global Relief Classes](/img/grc.png)](https://zenodo.org/records/15641257)
 ## Processing workflow
 ### Data preprocessing
 -  Extracting DEMs in the land areas
@@ -11,17 +20,17 @@ A code repo for producing Global Relief Classes using GIS libraries and scripts.
 - Extracting flat areas
 - Calculating accumulated slope (AS)
 - Determining AS thresholds
-### Classifying the landform types in L2
-- Extracting landform features (DEMs -> Flow analysis -> drainage networks)
+### Classifying the relief classes in L2
+- Extracting relief features (DEMs -> Flow analysis -> drainage networks)
 - Constructing simulated base terrain
-  - Interacting with flat landforms
+  - Interacting with flat reliefs
   - Defining boundaries
   - Determining elevation on boundaries
 - Calculating surface relief index (SRI)
 - Determining SRI thresholds
-### Type refinement for L2 classes
-- Reclassifying the flat terrain types by elevation
-- Reclassifying the rugged terrain types by SRI
+### Class refinement for L2 classes
+- Reclassifying the flat terrain classes by elevation
+- Reclassifying the rugged terrain classes by SRI
 ### Post-processing
 - Eliminating incorrect patches
 - Eliminating fragmented blocks
@@ -55,13 +64,14 @@ Nanjing Normal University produced this dataset with the support of the Deep-tim
 - [Zenodo Repo (rasterized version, 1 arc-second)](https://zenodo.org/records/15641257)
 - [National Earth System Science Data Center (vectorized version)](https://nnu.geodata.cn/data/datadetails.html?dataguid=28050973505297&docId=119)
 ## Publications
-Yang, X., Li, S., Ma, J., Chen, Y., Zhou, X., Li, F., Xiong, L., Zhou, C., Tang, G., and Meadows, M.: Global basic landform units derived from multi-source digital elevation models at 1 arc-second resolution, Earth Syst. Sci. Data Discuss. [preprint], https://doi.org/10.5194/essd-2024-401, in review, 2024.
+Yang, X., Li, S., Ma, J., Chen, Y., Zhou, X., Li, F., Xiong, L., Zhou, C., Tang, G. *, and Meadows, M. *: Global basic landform units derived from multi-source digital elevation models at 1 arc-second resolution, Earth Syst. Sci. Data Discuss. https://doi.org/10.5194/essd-2024-401, Accepted, 2025.
 ## Data license
 [CC BY-NC-SA 4.0](https://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/)
 ## Code license
 MIT
-## Contributor
-Yang, Xin; Li, Sijin; Ma, Junfei; Chen, Yang; Zhou, Xingyu; Zhou, Chenghu; Meadows, Micheal; Li, Fayuan; Xiong, Liyang; Tang, Guoan
+## Contributors
+Yang, Xin; Li, Sijin; Ma, Junfei; Chen, Yang; Zhou, Xingyu; Sun, Wenjie; Zhou, Chenghu; Meadows, Micheal; Li, Fayuan; Xiong, Liyang; Tang, Guoan and other members of the DTA Lab, School of Geography, Nanjing Normal University.
+
 ## TODO list
 - [ ] Add the code for the data preprocessing
   - [x] Add the code for the reprojecting
@@ -73,7 +83,7 @@ Yang, Xin; Li, Sijin; Ma, Junfei; Chen, Yang; Zhou, Xingyu; Zhou, Chenghu; Meado
 - [ ] Add the code for the type refinement
 - [ ] Add the code for the post-processing
 ## Contact
-[Chen, Yang (陈阳)](https://cubicsyang.github.io/), School of Geography, Nanjing Normal Univeristy
+[Yang CHEN (陈阳)](https://cubicsyang.github.io/), School of Geography, Nanjing Normal University
 ## Acknowledgements
 Thanks for the WhiteboxTools developers for their great work on the WhiteboxTools library, which is used in this project.
 Thanks for the Nanjing Normal University and Deep-time Digital Earth (DDE) International Big Science Program for providing the data and support for this project.
