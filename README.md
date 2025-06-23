@@ -4,7 +4,7 @@
 [![Publication](https://img.shields.io/badge/paper-accepted-blue)](https://doi.org/10.5194/essd-2024-401)
 [![GitHub Repo stars](https://img.shields.io/github/stars/nnu-dta/global-relief-classes?style=social)](https://github.com/nnu-dta/global-relief-classes/stargazers)
 
-A code repo for producing Global Relief Classes using GIS libraries and scripts.
+A code repo for producing Global Relief Classes using GIS libraries and scripts, written by the Digital Terrain Analysis (DTA) Lab, School of Geography, Nanjing Normal University.
 
 ## Overview
 This repository contains the code for producing Global Relief Classes, which classifies terrain relief on the Earth's surface into two levels with 1 arc-second resolution. The classification is based on the differences in slope characteristics and is divided into flat terrain and rugged terrain at Level 1 (L1). At Level 2 (L2), flat terrain is further divided into low-altitude, middle-altitude, high-altitude, and very high-altitude flat terrain, while rugged terrain is subdivided into low-relief, gentle-relief, moderate-relief, high-relief, and very high-relief rugged terrain.
